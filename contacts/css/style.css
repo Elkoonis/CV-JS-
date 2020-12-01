@@ -1,0 +1,141 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(BC.gif) ;
+  background-position: center center;      
+  background-repeat: no-repeat;      
+  background-attachment: fixed;      
+  background-size: cover;      
+  background-color: #464646; 
+ }
+
+h1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #fcd307;
+  text-align: center;
+  margin-bottom: 4%;
+  transform: translate(-50%, -50%);
+
+
+ text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.wrapper {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+.wrapper ul {
+  list-style: none;
+
+}
+
+.wrapper ul li {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 17px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #df4d19;
+  float: left;
+  transition: all 0.5s ease;
+  margin-left: 70px;
+  
+}
+
+.wrapper ul li .fa {
+  color: #49beb7;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+
+
+}
+
+
+.wrapper ul li:hover.telegram {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-paper-plane {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+
+.wrapper ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.google {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 640px){
+
+   body { background-image: url(BC.gif); 
+    }
+  h1 {width: 350px
+  }
+  .wrapper {
+      width: 350px;
+  }
+  .wrapper ul li{
+      margin-top: 10px;
+  }
+  .wrapper ul li.google{
+      margin-left: 60px;
+  }
+}
+
+
+@media screen and (max-width: 340px){
+  body { background-image: url(BC.gif); 
+    }
+     h1 {width: 350px
+  }
+  .wrapper {
+      width: 150px;
+  }
+  .wrapper ul li{
+      margin:15px;
+  }
+  .wrapper ul li.google{
+      margin-left: 15px;
+  }
+}
+
